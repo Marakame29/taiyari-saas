@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Demo - Page de test Taiyari</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #FF5733 0%, #C70039 100%);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #FF5733;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .menu-category {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .menu-category h3 {
+      font-size: 24px;
+      color: #FF5733;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #FF5733;
+      padding-bottom: 10px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+
+    .menu-item span:first-child {
+      font-weight: 500;
+    }
+
+    .menu-item span:last-child {
+      color: #FF5733;
+      font-weight: bold;
+    }
+
+    .info-box {
+      background: #f8f9fa;
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    .info-box h3 {
+      margin-bottom: 15px;
+      color: #FF5733;
+    }
+
+    .info-box p {
+      margin-bottom: 10px;
+    }
+
+    .demo-notice {
+      background: #fff3cd;
+      border: 2px dashed #ff6b6b;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .demo-notice h3 {
+      color: #FF5733;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍽️ Restaurant Demo</h1>
+    <p>Cuisine traditionnelle & moderne</p>
+  </header>
+
+  <div class="container">
+    <div class="demo-notice">
+      <h3>👋 Page de démonstration Taiyari</h3>
+      <p>
+        <strong>Testez le chatbot en bas à droite!</strong><br>
+        Essayez de demander: "Quels sont vos horaires?", "Avez-vous des plats végétariens?", "Je voudrais réserver"
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Notre Menu</h2>
+      
+      <div class="menu-grid">
+        <div class="menu-category">
+          <h3>Entrées</h3>
+          <div class="menu-item">
+            <span>Salade César</span>
+            <span>12 CHF</span>
+          </div>
+          <div class="menu-item">
+            <span>Soupe du jour</span>
+            <span>8 CHF</span>
+          </div>
+          <div class="menu-item">
+            <span>Carpaccio de boeuf</span>
+            <span>16 CHF</span>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <h3>Plats Principaux</h3>
+          <div class="menu-item">
+            <span>Filet de boeuf sauce poivre</span>
+            <span>38 CHF</span>
+          </div>
+          <div class="menu-item">
+            <span>Saumon grillé</span>
+            <span>32 CHF</span>
+          </div>
+          <div class="menu-item">
+            <span>Risotto aux champignons</span>
+            <span>28 CHF</span>
+          </div>
+          <div class="menu-item">
+            <span>Burger maison</span>
+            <span>24 CHF</span>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <h3>Desserts</h3>
+          <div class="menu-item">
+            <span>Tiramisu maison</span>
+            <span>10 CHF</span>
+          </div>
+          <div class="menu-item">
+            <span>Mousse au chocolat</span>
+            <span>9 CHF</span>
+          </div>
+          <div class="menu-item">
+            <span>Tarte tatin</span>
+            <span>11 CHF</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Informations Pratiques</h2>
+      
+      <div class="info-box">
+        <h3>📍 Adresse</h3>
+        <p>Rue de la Gare 15, 1003 Lausanne</p>
+
+        <h3 style="margin-top: 20px;">🕐 Horaires</h3>
+        <p><strong>Lundi-Vendredi:</strong> 12h-14h et 19h-22h</p>
+        <p><strong>Samedi-Dimanche:</strong> 12h-23h</p>
+        <p><strong>Fermé le mardi</strong></p>
+
+        <h3 style="margin-top: 20px;">📞 Réservations</h3>
+        <p>Téléphone: +41 21 XXX XX XX</p>
+        <p>Email: reservation@demo-restaurant.com</p>
+
+        <h3 style="margin-top: 20px;">✨ Services</h3>
+        <p>✓ Menu végétarien disponible</p>
+        <p>✓ Plats sans gluten sur demande</p>
+        <p>✓ Terrasse 30 places (été)</p>
+        <p>✓ Parking à proximité</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Restaurant Demo - Propulsé par Taiyari</p>
+  </footer>
+
+  <!-- ============================================ -->
+  <!-- TAIYARI CHATBOT - INTÉGRATION -->
+  <!-- ============================================ -->
+  <script>
+    // Pour le test local, utilisez localhost
+    // Pour le test en production, changez l'URL
+    window.TAIYARI_API_URL = 'http://localhost:3000';
+  </script>
+  <script src="http://localhost:3000/widget.js"></script>
+  <script>
+    Taiyari.init({
+      clientId: 'demo-restaurant',
+      primaryColor: '#FF5733',
+      language: 'fr',
+      botName: 'Chef Bot',
+      welcomeMessage: 'Bonjour! Je suis Chef Bot, votre assistant du Restaurant Demo. Comment puis-je vous aider?'
+    });
+  </script>
+
+</body>
+</html>

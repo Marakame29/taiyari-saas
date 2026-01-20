@@ -1,0 +1,39 @@
+{
+  "clientId": "demo-restaurant",
+  "config": {
+    "name": "Restaurant Demo",
+    "email": "demo@restaurant.com",
+    "primaryColor": "#FF5733",
+    "language": "fr",
+    "active": true
+  },
+  "rag": {
+    "content": "MENU DU RESTAURANT DEMO\n\nENTRÉES:\n- Salade César - 12 CHF\n- Soupe du jour - 8 CHF\n- Carpaccio de boeuf - 16 CHF\n\nPLATS PRINCIPAUX:\n- Filet de boeuf sauce poivre - 38 CHF\n- Saumon grillé - 32 CHF\n- Risotto aux champignons - 28 CHF\n- Burger maison - 24 CHF\n\nDESSERTS:\n- Tiramisu maison - 10 CHF\n- Mousse au chocolat - 9 CHF\n- Tarte tatin - 11 CHF\n\nBOISSONS:\n- Vin rouge (verre) - 8 CHF\n- Vin blanc (verre) - 8 CHF\n- Eau minérale - 4 CHF\n- Café - 4 CHF\n\nINFORMATIONS PRATIQUES:\n\nHoraires:\n- Lundi-Vendredi: 12h-14h et 19h-22h\n- Samedi-Dimanche: 12h-23h\n- Fermé le mardi\n\nAdresse:\nRue de la Gare 15, 1003 Lausanne\n\nRéservations:\nTéléphone: +41 21 XXX XX XX\nEmail: reservation@demo-restaurant.com\n\nCapacité: 60 places\nTerrasse: 30 places (été uniquement)\n\nServices:\n- Carte bancaire acceptée\n- Menu végétarien disponible\n- Plats sans gluten sur demande\n- Parking à proximité\n- Accessible PMR",
+    "lastUpdated": "2025-01-20T10:00:00.000Z",
+    "source": "manual",
+    "autoUpdateUrl": null,
+    "autoUpdate": false,
+    "scrapeType": "general"
+  },
+  "faq": [
+    {
+      "question": "Acceptez-vous les réservations?",
+      "answer": "Oui, nous acceptons les réservations par téléphone au +41 21 XXX XX XX ou par email à reservation@demo-restaurant.com"
+    },
+    {
+      "question": "Avez-vous des options végétariennes?",
+      "answer": "Oui, nous proposons un menu végétarien. Notre risotto aux champignons est très apprécié!"
+    },
+    {
+      "question": "Où vous situez-vous?",
+      "answer": "Nous sommes situés Rue de la Gare 15 à Lausanne, à 5 minutes de la gare CFF."
+    }
+  ],
+  "integrations": {
+    "hubspot": null,
+    "shopify": null,
+    "customCRM": null
+  },
+  "createdAt": "2025-01-20T10:00:00.000Z",
+  "updatedAt": "2025-01-20T10:00:00.000Z"
+}
