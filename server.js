@@ -266,10 +266,14 @@ app.post('/api/admin/login', async (req, res) => {
   try {
     const { username, password } = req.body;
 
-    // Pour simplifier: utilisez une vraie DB en production
     const ADMIN_USER = process.env.ADMIN_USERNAME || 'admin';
-    const ADMIN_PASS_HASH = process.env.ADMIN_PASSWORD_HASH || 
-      await bcrypt.hash('admin123', 10); // Changez-moi!
+    const ADMIN_PASS_HASH = process.env.ADMIN_PASSWORD_HASH;
+
+    if (!ADMIN_PASS_HASH) {
+      return res.status(500).json({ 
+        error: 'Configuration serveur manquante: ADMIN_PASSWORD_HASH requis' 
+      });
+    }
 
     if (username === ADMIN_USER && await bcrypt.compare(password, ADMIN_PASS_HASH)) {
       const token = jwt.sign({ username, role: 'admin' }, JWT_SECRET, { expiresIn: '24h' });
@@ -278,6 +282,7 @@ app.post('/api/admin/login', async (req, res) => {
       res.status(401).json({ error: 'Identifiants invalides' });
     }
   } catch (error) {
+    console.error('Erreur login:', error);
     res.status(500).json({ error: 'Erreur serveur' });
   }
 });
